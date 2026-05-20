@@ -1,6 +1,6 @@
 {
   "name": "@maffelu/storybook-addon-show-story-code",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Storybook addon that shows the full source of the current story file in a syntax-highlighted panel",
   "keywords": [
     "storybook",
