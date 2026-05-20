@@ -1,6 +1,6 @@
 {
   "name": "@maffelu/storybook-addon-show-story-code",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Storybook addon that shows the full source of the current story file in a syntax-highlighted panel",
   "keywords": [
     "storybook",
@@ -80,19 +80,17 @@
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0",
-    "storybook": ">=8.0.0"
+    "storybook": ">=10.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^8.6.14",
-    "@storybook/react-vite": "^8.6.18",
+    "@storybook/react-vite": "^10.4.0",
     "@storybook/test": "^8.6.15",
-    "@storybook/types": "^8.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
     "@types/react-syntax-highlighter": "^15.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "storybook": "^8.6.14",
+    "storybook": "^10.4.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
     "vite": "^5.0.0"

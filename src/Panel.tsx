@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { useParameter, useStorybookState } from 'storybook/internal/manager-api';
+import { useParameter, useStorybookState } from 'storybook/manager-api';
 import { AddonPanel } from 'storybook/internal/components';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 // @ts-ignore - individual language imports lack precise types

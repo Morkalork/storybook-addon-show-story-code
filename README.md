@@ -18,7 +18,7 @@ A Storybook addon that adds a **Story Code** panel showing the complete, syntax-
 
 ## Requirements
 
-- Storybook **8.0** or later
+- Storybook **10.0** or later
 - **Vite**-based Storybook (React, Vue, Svelte, etc.)
 - Node **18** or later
 
