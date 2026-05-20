@@ -4,7 +4,9 @@ import { AddonPanel } from 'storybook/internal/components';
 // @ts-ignore - react-syntax-highlighter types don't cover the prism subpath
 import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism';
 // @ts-ignore
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import vscDarkPlusRaw from 'react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus';
+// CJS/ESM interop: some bundlers wrap the export in a { default } envelope
+const vscDarkPlus = (vscDarkPlusRaw as any)?.default ?? vscDarkPlusRaw;
 import { PARAM_KEY } from './constants';
 
 interface StorySourceParam {
