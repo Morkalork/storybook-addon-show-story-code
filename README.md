@@ -2,7 +2,7 @@
 
 A Storybook addon that adds a **Story Code** panel showing the complete, syntax-highlighted source of the current story file — not just the active story, but the entire file.
 
-![Story Code panel showing syntax-highlighted TypeScript source with line numbers](https://raw.githubusercontent.com/maffelu/storybook-addon-show-story-code/main/assets/screenshot.png)
+![Story Code panel showing syntax-highlighted TypeScript source with line numbers](https://raw.githubusercontent.com/Morkalork/storybook-addon-show-story-code/main/assets/screenshot.png)
 
 ---
 
