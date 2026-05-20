@@ -21,4 +21,5 @@ export default defineConfig({
     /^@storybook\//,
     'vite',
   ],
+  noExternal: ['react-syntax-highlighter'],
 });

@@ -1,12 +1,24 @@
 import React, { useCallback, useState } from 'react';
 import { useParameter, useStorybookState } from 'storybook/manager-api';
 import { AddonPanel } from 'storybook/internal/components';
-// @ts-ignore - react-syntax-highlighter types don't cover the prism subpath
-import SyntaxHighlighter from 'react-syntax-highlighter/dist/esm/prism';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+// @ts-ignore - individual language imports lack precise types
+import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx';
+// @ts-ignore
+import typescript from 'react-syntax-highlighter/dist/esm/languages/prism/typescript';
+// @ts-ignore
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
+// @ts-ignore
+import javascript from 'react-syntax-highlighter/dist/esm/languages/prism/javascript';
 // @ts-ignore
 import vscDarkPlusRaw from 'react-syntax-highlighter/dist/esm/styles/prism/vsc-dark-plus';
-// CJS/ESM interop: some bundlers wrap the export in a { default } envelope
+// Guard against CJS/ESM interop wrapping the export in a { default } envelope
 const vscDarkPlus = (vscDarkPlusRaw as any)?.default ?? vscDarkPlusRaw;
+
+SyntaxHighlighter.registerLanguage('tsx', tsx);
+SyntaxHighlighter.registerLanguage('typescript', typescript);
+SyntaxHighlighter.registerLanguage('jsx', jsx);
+SyntaxHighlighter.registerLanguage('javascript', javascript);
 import { PARAM_KEY } from './constants';
 
 interface StorySourceParam {
