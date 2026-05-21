@@ -16,6 +16,8 @@ export default defineConfig({
   external: [
     'react',
     'react-dom',
+    /^react\//,
+    /^react-dom\//,
     'storybook',
     /^storybook\//,
     /^@storybook\//,

@@ -5,8 +5,6 @@ import { storybookShowStoryCodePlugin } from './vite-plugin';
 // (shims: true) for ESM builds; natively available in CJS builds.
 export const managerEntries = [path.join(__dirname, 'manager.js')];
 
-export const previewAnnotations = [path.join(__dirname, 'preview.js')];
-
 export async function viteFinal(config: Record<string, unknown>): Promise<Record<string, unknown>> {
   const existingPlugins = (config.plugins as unknown[] | undefined) ?? [];
   return {
